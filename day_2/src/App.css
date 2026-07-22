@@ -1,26 +1,169 @@
-.card{
-  background-color: rgb(152, 153, 139);
-  padding: 20px;
-  margin: 15px;
-  width: 300px;
-  height: 200px;
-  border-radius: 15px;
-  border: 5px solid black;
-  box-shadow: 10px 10px 5px grey;
+/* Parent Container */
+.parent {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-} 
+  gap: 24px;
+  padding: 40px 20px;
+  min-height: 100vh;
+  background-color: #fafafa;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
 
-.card button{
-  background-color: rgb(152, 153, 139);
-  padding: 10px;
-  margin: 5px;
+/* Instagram Profile Card */
+.card {
+  background: #ffffff;
+  border: 1px solid #dbdbdb;
+  border-radius: 16px;
+  width: 320px;
+  padding: 24px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Instagram Story Gradient Ring */
+.profile-img-container {
+  margin-bottom: 14px;
+}
+
+.story-ring {
+  padding: 3px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  display: inline-block;
+}
+
+.card img {
   width: 100px;
-  height: 40px;
-  border-radius: 5px;
-  border: 5px solid black;
-  box-shadow: 10px 10px 5px grey;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  border: 3px solid #ffffff;
+}
+
+/* Profile Details */ 
+.profile-info {
+  margin-bottom: 16px;
+}
+
+.profile-name {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #262626;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.verified-icon {
+  background: #0095f6;
+  color: #ffffff;
+  font-size: 0.65rem;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.profile-handle {
+  font-size: 0.85rem;
+  color: #8e8e8e;
+  margin: 4px 0 8px 0;
+  font-weight: 400;
+}
+
+.profile-bio {
+  font-size: 0.875rem;
+  color: #262626;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Profile Stats */
+.profile-stats {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 12px 0;
+  margin-bottom: 18px;
+  border-top: 1px solid #efefef;
+  border-bottom: 1px solid #efefef;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-num {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #262626;
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  color: #8e8e8e;
+}
+
+/* Action Buttons */
+.card-actions {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.btn-follow {
+  flex: 1;
+  background-color: #0095f6;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 8px;
   cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-follow:hover {
+  background-color: #1877f2;
+}
+
+.btn-follow:active {
+  opacity: 0.85;
+}
+
+.btn-message {
+  flex: 1;
+  background-color: #efefef;
+  color: #262626;
+  border: none;
+  padding: 8px 16px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-message:hover {
+  background-color: #dbdbdb;
 }
