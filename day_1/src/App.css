@@ -1,0 +1,41 @@
+.main{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.nav1{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  
+}
+.nav1 a{
+  text-decoration: none;
+  color: aliceblue;
+}
+.nav1 a:hover{
+  text-decoration: underline;
+  cursor: pointer;
+  color: #424545;
+  transition: 0.2;
+}
+.nav1 h1{
+  color: #0adeed;
+}
+.nav2{
+  display: flex;
+  gap: 20px;
+}
+.nav2 button{
+  padding: 10px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  background-color: #0adeed;
+  
+}
+.nav2 button:hover{
+  padding: 12px;
+  background-color: #04b8c5;
+}
