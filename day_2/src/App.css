@@ -12,3 +12,14 @@
   align-items: center;
   flex-direction: column;
 } 
+
+.card button{
+  background-color: rgb(152, 153, 139);
+  padding: 10px;
+  margin: 5px;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  border: 5px solid black;
+  box-shadow: 10px 10px 5px grey;
+}
