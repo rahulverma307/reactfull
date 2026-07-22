@@ -3,10 +3,10 @@ import "./navbar.css"
 
 const navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeNav, setActiveNav] = useState('Home');
+  const [activeNav, setActiveNav] = useState('Ghar');
 
   const navLinks = [
-    { name: 'Home', href: '#home' },
+    { name: 'Ghar', href: '#Ghar' },
     { name: 'Features', href: '#features' },
     { name: 'About', href: '#about' },
     { name: 'Pricing', href: '#pricing' },
@@ -22,7 +22,7 @@ const navbar = () => {
         </a>
 
         {/* Desktop Navigation Links */}
-        {/* <ul className="nav-links">
+        <ul className="nav-links">
           {navLinks.map((link) => (
             <li key={link.name}>
               <a
@@ -34,17 +34,6 @@ const navbar = () => {
               </a>
             </li>
           ))}
-        </ul> */}
-
-        <ul className='navlink'>
-          {navLinks.map((link)=>{
-            <li key={link.name}>
-              <a href={link.href} className={`mobile-nav-link ${activeNav === link.name ? 'active' : ''}`} onClick={()=>{
-                setActiveNav(link.name);
-                setIsOpen(false);
-              }}>{link.name}</a>
-            </li>
-          })}
         </ul>
 
         {/* Right Actions */}
