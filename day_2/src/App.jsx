@@ -1,17 +1,16 @@
 import './App.css'
+import Card from './components/Card'
 function App() {
   return (
   <>
-
-  <div className="card">
-    <h1>Rahul Verma</h1>
-    <p>34 year old full stack developer</p>
-    <button>Follow</button>
-    <button>Message</button>
-    
+  <div className="parent">
+    <Card  name="Rahul Verma" age={18}/>
+    <Card name="Vivek Kumar" age={21}/>
+    <Card name="Ajay Kumar" age={20}/>
   </div>
+  
   </>
   )
 }
 
-export default App
+export default App  
