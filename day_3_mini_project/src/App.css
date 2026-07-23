@@ -27,6 +27,8 @@ body {
   align-items: center;
   width: 100%;
   padding: 24px 16px;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 /* Job Card Container */
