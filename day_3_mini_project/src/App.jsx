@@ -74,12 +74,14 @@ const App = () => {
 
   return (
     <>
-   {jobs.map(function(el){
+   {jobs.map(function(el,idx){
     return (
-      <Card company={el.company} jobRole={el.jobRole} jobType={el.jobType} level={el.level} salary={el.salary} location={el.location} posted={el.posted} logo={el.logo} />
-
+      <div key={idx}>
+        <Card company={el.company} jobRole={el.jobRole} jobType={el.jobType} level={el.level} salary={el.salary} location={el.location} posted={el.posted} logo={el.logo} />
+      </div>
     )
    })}
+
     </>
   )
 }
